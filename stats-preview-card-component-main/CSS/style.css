@@ -1,0 +1,139 @@
+body {
+  background-color: hsl(233, 47%, 7%);
+  font-family: "Lexend Deca", sans-serif;
+  min-height: 100vh;
+  padding: 1rem;
+  margin: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  background-color: hsl(244, 38%, 16%);
+  margin: 3rem 1rem;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.image {
+  margin: 0;
+  padding: 0;
+}
+
+.image img {
+  width: 100%;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem 2rem;
+}
+
+h1 {
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  margin-bottom: -2px;
+}
+
+.insights {
+  color: hsl(277, 64%, 61%);
+}
+
+.attribution {
+  color: white;
+}
+
+p {
+  text-align: center;
+  font-size: 0.85rem;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  color: hsla(0, 0%, 100%, 0.6);
+}
+
+.stats {
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  margin-bottom: 1rem;
+}
+
+.stats div {
+  margin-bottom: 1rem;
+  color: hsla(0, 0%, 100%, 0.6);
+  letter-spacing: 1px;
+}
+
+.block {
+  display: block;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: hsla(0, 0%, 100%, 0.9);
+}
+
+.attribution {
+  font-size: 16px;
+}
+
+@media screen and (min-width: 376px) {
+  body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  main {
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1200px;
+    min-width: 1200px;
+  }
+
+  .container {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  .image {
+    order: 1;
+    width: 50%;
+  }
+
+  section {
+    width: 50%;
+  }
+
+  h1 {
+    font-size: 200%;
+    text-align: start;
+    padding: 1rem;
+  }
+
+  p {
+    text-align: start;
+    align-self: flex-start;
+    padding: 1rem;
+    font-size: 0.95rem;
+    margin-top: -20px;
+  }
+
+  .stats {
+    align-self: flex-start;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+    display: flex;
+  }
+
+  .block {
+    text-align: start;
+    font-size: 1.4rem;
+  }
+}
